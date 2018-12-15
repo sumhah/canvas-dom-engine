@@ -7,4 +7,4 @@ Implement the browser layout engine in canvas
 * Simplest expression support
 
 ## Tip
-This will take some time to complete
+The project still needs some time to complete
