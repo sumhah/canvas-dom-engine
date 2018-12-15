@@ -1,29 +1,57 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="GameScreen">
+      <canvas width="512" height="448" ref="canvas" class="canvas">A drawing of something.</canvas>
     </div>
-    <router-view/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+    /* eslint-disable */
+    import App from './js/App';
+    export default {
+        name: 'app',
+        mounted() {
+            App.init(this.$refs.canvas);
+        }
     }
+</script>
+
+<style>
+  * {
+    padding: 0;
+    margin: 0;
   }
-}
+
+  html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #666600;
+  }
+
+  img {
+    border: 0;
+  }
+
+  a {
+    outline: none;
+  }
+
+  .canvas {
+    background-color: #666;
+  }
+
+  .GameScreen {
+    position: absolute;
+    overflow: hidden;
+    width: 512px;
+    height: 448px;
+    left: 50%;
+    margin-left: -256px;
+    top: 50%;
+    margin-top: -224px;
+    border: #630 double 4px;
+    background: #000;
+  }
+
 </style>
