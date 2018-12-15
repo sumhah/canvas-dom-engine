@@ -8,4 +8,3 @@ Implement the browser layout engine in canvas
 
 ## Tip
 The project still needs some time to complete
->>>>>>> e312145bcd87188391c07cf8e4c757d0f77fe936
