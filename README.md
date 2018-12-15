@@ -1,26 +1,11 @@
 # canvas-dom-engine
+Implement the browser layout engine in canvas
+## Feature
+* Template syntax similar to vue.js
+* The most basic dom implementation
+* The event bubbling
+* Simplest expression support
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
+## Tip
+The project still needs some time to complete
+>>>>>>> e312145bcd87188391c07cf8e4c757d0f77fe936
